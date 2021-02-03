@@ -6,6 +6,7 @@ module.exports = {
     plugins: [...options.plugins, '@babel/plugin-transform-react-jsx']
   }),
   webpackFinal: (config) => {
+    //here
     config.resolve.modules.push(`${process.cwd()}/src`)
     return config
   }
