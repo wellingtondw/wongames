@@ -43,6 +43,11 @@ export const Wrapper = styled.button<WrapperProps>`
     border: 0;
     border-radius: ${theme.border.radius};
     padding: ${theme.spacings.xxsmall};
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: ${theme.font.family};
 
     ${!!size && wrapperModifiers[size](theme)};
     ${!!fullWidth && wrapperModifiers.fullWidth()}
