@@ -13,6 +13,11 @@ export default {
   },
   parameters: {
     layout: 'fullscreen'
+  },
+  argTypes: {
+    ribbon: {
+      type: 'string'
+    }
   }
 } as Meta
 
@@ -23,7 +28,7 @@ export const Default: Story<BannerProps> = (args) => (
 )
 
 export const WithRibbon: Story<BannerProps> = (args) => (
-  <div style={{ maxWidth: '104rem' }}>
+  <div style={{ maxWidth: '104rem', margin: '0 auto' }}>
     <Banner {...args} />
   </div>
 )
