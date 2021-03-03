@@ -8,7 +8,6 @@ export const Wrapper = styled.main`
   display: grid;
   grid-template-columns: 1fr;
   height: 100vh;
-
   ${media.greaterThan('medium')`
     grid-template-columns: 1fr 1fr;
   `}
@@ -22,11 +21,9 @@ export const BannerBlock = styled.div`
     background-position: center center;
     padding: ${theme.spacings.xxlarge} ${theme.spacings.xxlarge}
       ${theme.spacings.large};
-
     ${media.lessThan('medium')`
       display: none;
     `}
-
     &:after {
       content: '';
       position: absolute;
@@ -49,6 +46,10 @@ export const BannerContent = styled.div`
     height: 100%;
     position: relative;
     z-index: ${theme.layers.base};
+    a {
+      width: fit-content;
+      height: fit-content;
+    }
   `}
 `
 
@@ -83,11 +84,9 @@ export const Content = styled.div`
 export const ContentWrapper = styled.div`
   ${({ theme }) => css`
     width: 30rem;
-
     ${media.greaterThan('medium')`
       width: 36rem;
     `}
-
     ${LogoStyles.Wrapper} {
       margin: 0 auto ${theme.spacings.xxlarge};
     }
