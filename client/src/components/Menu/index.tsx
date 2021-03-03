@@ -74,7 +74,7 @@ const Menu = ({ username }: MenuProps) => {
           <S.RegisterBox>
             <Link href="/sign-in" passHref>
               <Button fullWidth size="large">
-                Log in now
+                Sign in
               </Button>
             </Link>
             <span>or</span>
